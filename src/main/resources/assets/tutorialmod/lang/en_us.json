@@ -1,5 +1,7 @@
 {
-  "item.tutorialmod.placeholder": "Zircon",
+  "item.tutorialmod.titanium_ingot": "Titanium ingot",
+  "item.tutorialmod.titanium_pickaxe": "Titanium Pickaxe",
+  "item.tutorialmod.raw_titanium": "Raw Titanium",
 
-  "itemGroup.ExampleCreativeTab": "Zircon Tutorial"
+  "itemGroup.ExampleCreativeTab": "Titanium"
 }
