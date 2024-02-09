@@ -19,7 +19,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab)));
 
  public static final RegistryObject<Item> titanium_pickaxe = ITEMS.register("titanium_pickaxe",
-            () -> new PickaxeItem(new ModToolTiers().TITANIUM,2,3,
+            () -> new PickaxeItem(new ModToolTiers().TITANIUM,1,-2.8f, //p_42962 is attack damage, 0 == 4. Second parameter is att. speed. 0 == 4
                     new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab).stacksTo(1)));
 
  public static final RegistryObject<Item> raw_titanium = ITEMS.register("raw_titanium",
