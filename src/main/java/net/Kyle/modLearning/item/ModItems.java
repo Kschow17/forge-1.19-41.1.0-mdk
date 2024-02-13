@@ -1,9 +1,7 @@
 package net.Kyle.modLearning.item;
 
 import net.Kyle.modLearning.TutorialMod;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,9 +16,27 @@ public class ModItems {
     public static final RegistryObject<Item> titanium_ingot = ITEMS.register("titanium_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab)));
 
+
  public static final RegistryObject<Item> titanium_pickaxe = ITEMS.register("titanium_pickaxe",
             () -> new PickaxeItem(new ModToolTiers().TITANIUM,1,-2.8f, //p_42962 is attack damage, 0 == 4. Second parameter is att. speed. 0 == 4
                     new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab).stacksTo(1)));
+
+ public static final RegistryObject<Item> titanium_shovel = ITEMS.register("titanium_shovel",
+         () -> new ShovelItem(new ModToolTiers().TITANIUM,1.5f,-2f,
+                 new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab).stacksTo(1)));
+
+  public static final RegistryObject<Item> titanium_axe = ITEMS.register("titanium_axe",
+         () -> new AxeItem(new ModToolTiers().TITANIUM,5,-2.2f,
+                 new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab).stacksTo(1)));
+
+  public static final RegistryObject<Item> titanium_hoe = ITEMS.register("titanium_hoe",
+         () -> new HoeItem(new ModToolTiers().TITANIUM,-3,0f,
+                 new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab).stacksTo(1)));
+  public static final RegistryObject<Item> titanium_sword = ITEMS.register("titanium_sword",
+          () -> new SwordItem(new ModToolTiers().TITANIUM, 3,-1.6f,
+                  new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab).stacksTo(1)));
+
+
 
  public static final RegistryObject<Item> raw_titanium = ITEMS.register("raw_titanium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab)));
