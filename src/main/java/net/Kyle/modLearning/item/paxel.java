@@ -32,13 +32,6 @@ public class paxel extends DiggerItem {
     public paxel(Tier tier, Float damage,  net.minecraft.world.item.Item.Properties itemProperties) {
         super(damage, -2.8f, tier, ModItems.PAXEL_BLOCKS, itemProperties);
     }
-
-    @Override
-    public float getDestroySpeed(ItemStack stack, BlockState state) {
-        return 30;
-    }
-
-    @Override
     public InteractionResult useOn(UseOnContext context) {
         final var world = context.getLevel();
         final var blockPos = context.getClickedPos();

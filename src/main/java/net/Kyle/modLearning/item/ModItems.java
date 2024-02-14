@@ -1,6 +1,8 @@
 package net.Kyle.modLearning.item;
 
 import net.Kyle.modLearning.TutorialMod;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
 import net.Kyle.modLearning.block.ModBlocks;
 import net.minecraft.core.Registry;
@@ -22,11 +24,13 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
     public static final TagKey<Block> PAXEL_BLOCKS = TagKey.create(ForgeRegistries.Keys.BLOCKS, ModItems.modResource("paxel_blocks"));
 
-public static final RegistryObject<Item> titanium_paxel = ITEMS.register("titanium_paxel",
-        () -> new paxel(new ModToolTiers().TITANIUM,6f,
-                new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab).stacksTo(1)));
     public static final RegistryObject<Item> titanium_ingot = ITEMS.register("titanium_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab)));
+
+
+    public static final RegistryObject<Item> titanium_paxel = ITEMS.register("titanium_paxel",
+            () -> new paxel(new ModToolTiers().TITANIUM,4f,
+                    new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab).stacksTo(1)));
 
 
  public static final RegistryObject<Item> titanium_pickaxe = ITEMS.register("titanium_pickaxe",
@@ -47,15 +51,12 @@ public static final RegistryObject<Item> titanium_paxel = ITEMS.register("titani
   public static final RegistryObject<Item> titanium_sword = ITEMS.register("titanium_sword",
           () -> new SwordItem(new ModToolTiers().TITANIUM, 3,-1.6f,
                   new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab).stacksTo(1)));
-
-
-
  public static final RegistryObject<Item> raw_titanium = ITEMS.register("raw_titanium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab)));
-
     public static final ResourceLocation modResource(String name) {
         return new ResourceLocation(TutorialMod.MOD_ID, name);
     }
+
 
 
     public static void register(IEventBus eventBus) {
