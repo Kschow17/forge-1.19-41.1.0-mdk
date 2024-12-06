@@ -4,20 +4,13 @@ import net.Kyle.modLearning.TutorialMod;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
-import net.Kyle.modLearning.block.ModBlocks;
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.Kyle.modLearning.item.ModToolTiers;
-import net.Kyle.modLearning.util.ModTags;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
