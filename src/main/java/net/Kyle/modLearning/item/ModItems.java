@@ -4,6 +4,13 @@ import net.Kyle.modLearning.TutorialMod;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
+import net.Kyle.modLearning.block.ModBlocks;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,11 +22,11 @@ import net.Kyle.modLearning.util.ModTags;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
+    public static final TagKey<Block> PAXEL_BLOCKS = TagKey.create(ForgeRegistries.Keys.BLOCKS, ModItems.modResource("paxel_blocks"));
 
     public static final RegistryObject<Item> titanium_ingot = ITEMS.register("titanium_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab)));
 
-    public static final TagKey<Block> PAXEL_BLOCKS = TagKey.create(ForgeRegistries.Keys.BLOCKS, ModItems.modResource("paxel_blocks"));
 
     public static final RegistryObject<Item> titanium_paxel = ITEMS.register("titanium_paxel",
             () -> new paxel(new ModToolTiers().TITANIUM,4f,

@@ -1,6 +1,7 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "tutorialmod:item/titanium_paxel"
-  }
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tutorialmod:item/titanium_paxel"
+    }
 }
+
