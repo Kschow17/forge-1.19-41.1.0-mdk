@@ -5,7 +5,7 @@
       "item": "minecraft:stick"
     },
     "X": {
-      "item": "tutorialmod:titanium_ingot"
+      "item": "titanium:titanium_ingot"
     }
   },
   "pattern": [
