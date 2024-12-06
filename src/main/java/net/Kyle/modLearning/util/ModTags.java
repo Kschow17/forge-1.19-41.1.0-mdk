@@ -1,13 +1,10 @@
 package net.Kyle.modLearning.util;
 
-import net.Kyle.modLearning.TutorialMod;
+import net.Kyle.modLearning.Titanium;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-
-import javax.tools.Tool;
 
 public class ModTags {
     public static class Blocks {
@@ -15,7 +12,7 @@ public class ModTags {
                 = tag("needs_titanium_tool");
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(new ResourceLocation(TutorialMod.MOD_ID, name));
+            return BlockTags.create(new ResourceLocation(Titanium.MOD_ID, name));
         }
 
         private static TagKey<Block> forgeTag(String name) {

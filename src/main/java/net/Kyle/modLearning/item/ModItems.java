@@ -1,6 +1,6 @@
 package net.Kyle.modLearning.item;
 
-import net.Kyle.modLearning.TutorialMod;
+import net.Kyle.modLearning.Titanium;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
@@ -14,7 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, Titanium.MOD_ID);
     public static final TagKey<Block> PAXEL_BLOCKS = TagKey.create(ForgeRegistries.Keys.BLOCKS, ModItems.modResource("paxel_blocks"));
 
     public static final RegistryObject<Item> titanium_ingot = ITEMS.register("titanium_ingot",
@@ -47,7 +47,7 @@ public class ModItems {
  public static final RegistryObject<Item> raw_titanium = ITEMS.register("raw_titanium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Example_mod_tab)));
     public static final ResourceLocation modResource(String name) {
-        return new ResourceLocation(TutorialMod.MOD_ID, name);
+        return new ResourceLocation(Titanium.MOD_ID, name);
     }
 
 

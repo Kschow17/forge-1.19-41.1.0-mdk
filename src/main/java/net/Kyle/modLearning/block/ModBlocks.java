@@ -1,6 +1,6 @@
 package net.Kyle.modLearning.block;
 
-import net.Kyle.modLearning.TutorialMod;
+import net.Kyle.modLearning.Titanium;
 import net.Kyle.modLearning.item.ModCreativeModeTab;
 import net.Kyle.modLearning.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -20,7 +20,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, Titanium.MOD_ID);
 
 
     public static final RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block",

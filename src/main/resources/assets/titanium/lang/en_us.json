@@ -1,0 +1,16 @@
+{
+  "item.titanium.raw_titanium": "Raw Titanium",
+  "item.titanium.titanium_ingot": "Titanium Ingot",
+  "item.titanium.titanium_pickaxe": "Titanium Pickaxe",
+  "item.titanium.titanium_shovel": "Titanium Shovel",
+  "item.titanium.titanium_axe": "Titanium Axe",
+  "item.titanium.titanium_hoe": "Titanium Hoe",
+  "item.titanium.titanium_sword": "Titanium Sword",
+  "item.titanium.titanium_paxel": "Titanium Paxel",
+
+
+  "block.titanium.titanium_block": "Block of Titanium",
+  "block.titanium.deepslate_titanium_ore": "Deepslate Titanium Ore",
+
+  "itemGroup.ExampleCreativeTab": "Titanium"
+}

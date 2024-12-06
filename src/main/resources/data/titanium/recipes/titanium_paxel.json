@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "titanium:titanium_axe"
+    },
+    "Y": {
+      "item": "titanium:titanium_pickaxe"
+    },
+    "Z": {
+      "item": "titanium:titanium_shovel"
+    }
+  },
+  "pattern": [
+    "XYZ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "titanium:titanium_paxel"
+  }
+}

@@ -1,11 +1,8 @@
 package net.Kyle.modLearning.world.feature;
 
-import net.Kyle.modLearning.TutorialMod;
+import net.Kyle.modLearning.Titanium;
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,7 +12,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final DeferredRegister<PlacedFeature> PLACED_FEATURES =
-            DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, TutorialMod.MOD_ID);
+            DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, Titanium.MOD_ID);
 
     public static final RegistryObject<PlacedFeature> TITANIUM_ORE = PLACED_FEATURES.register("titanium_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.TITANIUM_ORE.getHolder().get(),
