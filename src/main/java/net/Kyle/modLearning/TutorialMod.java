@@ -3,6 +3,8 @@ package net.Kyle.modLearning;
 import com.mojang.logging.LogUtils;
 import net.Kyle.modLearning.block.ModBlocks;
 import net.Kyle.modLearning.item.ModItems;
+import net.Kyle.modLearning.world.feature.ModConfiguredFeatures;
+import net.Kyle.modLearning.world.feature.ModPlacedFeatures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -27,6 +29,8 @@ public class TutorialMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

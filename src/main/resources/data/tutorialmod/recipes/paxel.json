@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "p": {
+      "item": "tutorialmod:titanium_pickaxe"
+    },
+    "a": {
+      "item": "tutorialmod:titanium_axe"
+    },
+    "d": {
+      "item": "tutorialmod:titanium_shovel"
+    },
+    "s": {
+      "item": "tutorialmod:titanium_sword"
+    }
+  },
+  "pattern": [
+    "pad",
+    " #s",
+    " # "
+  ],
+  "result": {
+    "item": "tutorialmod:titanium_paxel"
+  }
+}
